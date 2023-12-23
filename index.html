@@ -222,7 +222,7 @@ button.disabled:hover {
 <label><input type="checkbox" name="games" class="games" value="Hisui"> Legends Arceus </label>	
 </p>
 <p>
-<label><input type="checkbox" name="games" class="games" value="Paldea"> Scarlet and Violet </label>	
+<label><input type="checkbox" name="games" class="games" value="Paldea/Kitakami/Blueberry Academy "> Scarlet and Violet </label>	
 </p>
 
 <p> <b> Include roles: </b>
@@ -352,7 +352,7 @@ var items = [
   	  {id: 'Primo', name: 'Primo', image: '230px-Primo2.png', game: 'Kanto', role: 'Other', type: 'None'},
   	  	// Let's Go
   	  {id: 'Chase', name: 'Chase', image: '79px-Lets_Go_Pikachu_Eevee_Male_Trainer.png', game: 'Kanto', role: 'Protagonist', type: 'Multitype'},
-  	  {id: 'Elaine', name: 'Elaine', image: '61px-Lets_Go_Pikachu_Eevee_Female_Trainer.png', game: 'Kanto', role: 'Protagonist', type: 'Multitype'},
+  	  {id: 'Elaine', name: 'Elaine', image: 'elaine.png', game: 'Kanto', role: 'Protagonist', type: 'Multitype'},
   	  {id: 'Trace', name: 'Trace', image: '61px-Lets_Go_Pikachu_Eevee_Rival.png', game: 'Kanto', role: 'Rival', type: 'Multitype'},
   	  {id: 'Champion Trace', name: 'Champion Trace', image: '61px-Lets_Go_Pikachu_Eevee_Rival.png', game: 'Kanto', role: 'Champion', base: 'Trace', type: 'Multitype'},	
   	  {id: 'Green', name: 'Green', image: '200px-Lets_Go_Pikachu_Eevee_Green.png', game: 'Kanto', role: 'Friend', type: 'Multitype'},
@@ -500,7 +500,7 @@ var items = [
 	{id: 'Mars', name: 'Mars', image: 'mars.png', game: 'Sinnoh', role: 'Villain', type: 'Multitype'},
 	{id: 'Jupiter', name: 'Jupiter', image: 'jupiter.png', game: 'Sinnoh', role: 'Villain', type: 'Multitype'},
 	{id: 'Saturn', name: 'Saturn', image: 'saturn.png', game: 'Sinnoh', role: 'Villain', type: 'Multitype'},
-	{id: 'Palmer', name: 'Palmer', image: '200px-Diamond_Pearl_Palmer.png', game: 'Sinnoh', role: 'Frontier Brain', type: 'Multitype'},
+	{id: 'Palmer', name: 'Palmer', image: 'palmer.png', game: 'Sinnoh', role: 'Frontier Brain', type: 'Multitype'},
 	{id: 'Roxie and Oli', name: 'Roxie and Oli', image: 'Spr_DP_Interviewers.png', game: 'Sinnoh', role: 'Other', type: 'Multitype'},
 	{id: 'Bebe', name: 'Bebe', image: '230px-Bebe_TCG_art.png', game: 'Sinnoh', role: 'Other', type: 'None'},
 	{id: 'Mr. Backlot', name: 'Mr. Backlot', image: '200px-Mr_Backlot_Adventures.png', game: 'Sinnoh', role: 'Other', type: 'None'},
@@ -522,7 +522,7 @@ var items = [
   	{id: 'Darach', name: 'Darach', image: 'darach.png', game: 'Sinnoh', role: 'Frontier Brain', type: 'Multitype'},
   	{id: 'Caitlin', name: 'Caitlin', image: 'caitlin.png', game: 'Unova', role: 'Elite Four', type: 'Psychic'},
   	{id: 'Princess Caitlin', name: 'Princess Caitlin', image: 'Spr_Pt_Caitlin.png', game: 'Sinnoh', role: 'Frontier Brain', base: 'Caitlin', type: 'None'},
-  	{id: 'Argenta', name: 'Argenta', image: '200px-Platinum_Argenta.png', game: 'Sinnoh', role: 'Frontier Brain', type: 'Multitype'},
+  	{id: 'Argenta', name: 'Argenta', image: 'argenta.png', game: 'Sinnoh', role: 'Frontier Brain', type: 'Multitype'},
 
   	//Unova
   	//{id: '', name: '', image: '.png', game: '', role: ''},
@@ -537,7 +537,7 @@ var items = [
   	{id: 'Cilan', name: 'Cilan', image: 'cilan.png', game: 'Unova', role: 'Gym Leader', type: 'Grass'},
   	{id: 'Chili', name: 'Chili', image: 'chili.png', game: 'Unova', role: 'Gym Leader', type: 'Fire'},
   	{id: 'Cress', name: 'Cress', image: 'cress.png', game: 'Unova', role: 'Gym Leader', type: 'Water'},
-  	{id: 'Lenora', name: 'Lenora', image: '200px-Black_White_Lenora_2.png', game: 'Unova', role: 'Gym Leader', type: 'Normal'},
+  	{id: 'Lenora', name: 'Lenora', image: 'lenora.png', game: 'Unova', role: 'Gym Leader', type: 'Normal'},
   	{id: 'Burgh', name: 'Burgh', image: 'burgh.png', game: 'Unova', role: 'Gym Leader', type: 'Bug'},
   	{id: 'Elesa', name: 'Elesa', image: 'elesa-original.png', game: 'Unova', role: 'Gym Leader', type: 'Electric'},
   	{id: 'Clay', name: 'Clay', image: 'clay.png', game: 'Unova', role: 'Gym Leader', type: 'Ground'},
@@ -736,8 +736,8 @@ var items = [
 	//Hisui
 	//{id: '', name: '', image: '', game: 'Hisui', role: '', type: ''},
 	
-	{id: 'Rei', name: 'Rei', image: '72px-Legends_Arceus_Rei.webp', game: 'Hisui', role: 'Protagonist', type: 'Multitype'},
-	{id: 'Akari', name: 'Akari', image: '78px-Legends_Arceus_Akari.webp', game: 'Hisui', role: 'Protagonist', type: 'Multitype'},
+	{id: 'Rei', name: 'Rei', image: 'rei.png', game: 'Hisui', role: 'Protagonist', type: 'Multitype'},
+	{id: 'Akari', name: 'Akari', image: 'akari.png', game: 'Hisui', role: 'Protagonist', type: 'Multitype'},
 	{id: 'Professor Laventon', name: 'Professor Laventon', image: '53px-Legends_Arceus_Professor_Laventon.webp', game: 'Hisui', role: 'Professor', type: 'None'},
 	{id: 'Kamado', name: 'Kamado', image: '84px-Legends_Arceus_Kamado.webp', game: 'Hisui', role: 'Friend', type: 'Multitype'},
 	{id: 'Zisu', name: 'Zisu', image: '180px-VSZisu.webp', game: 'Hisui', role: 'Friend', type: 'Multitype'},
@@ -810,12 +810,30 @@ var items = [
 	{id: 'Raifort', name: 'Raifort', image: '120px-VSRaifort.png', game: 'Paldea', role: 'Teacher', type: 'Multitype'},
 	{id: 'Saguaro', name: 'Saguaro', image: '120px-VSSaguaro.png', game: 'Paldea', role: 'Teacher', type: 'Multitype'},
 	{id: 'Salvatore', name: 'Salvatore', image: '120px-VSSalvatore.png', game: 'Paldea', role: 'Teacher', type: 'Multitype'},
-	{id: 'Tyme', name: 'Tyme', image: '120px-VSTyme.png', game: 'Paldea', role: 'Teacher', type: 'Rock'}
+	{id: 'Tyme', name: 'Tyme', image: '120px-VSTyme.png', game: 'Paldea', role: 'Teacher', type: 'Rock'},
 	
-	//DLC!
+	//DLC
 	//{id: '', name: '', image: '.png', game: 'Paldea', role: '', type: ''},
-	
-    
+	{id: 'Carmine', name: 'Carmine', image: '190px-Scarlet_Violet_Carmine.png', game: 'Paldea', role: 'Rival', type: 'Multitype'},
+	{id: 'Kieran', name: 'Kirean', image: '150px-Scarlet_Violet_Kieran.png', game: 'Paldea', role: 'Rival', type: 'Multitype'},
+	{id: 'Champion Kieran', name: 'Champion Kieran', image: '755px-VSKieran_3.png', game: 'Paldea', role: 'Champion', type: 'Multitype', base: 'Kieran'},
+	{id: 'Briar', name: 'Briar', image: '150px-Scarlet_Violet_Briar.png', game: 'Paldea', role: 'Teacher', type: 'None'},
+	 {id: 'Perrin', name: 'Perrin', image: '161px-Scarlet_Violet_Perrin.png', game: 'Paldea', role: 'Friend', type: 'Multitype'},
+	{id: "Billy and O'Nare", name: "Billy and O'Nare", image: '250px-Glitterati_Billy_and_O'Nare.png', game: 'Paldea', role: 'Other', type: 'Multitype'},
+	 {id: 'Yukito', name: 'Yukito', image: '114px-VSYukito.png', game: 'Paldea', role: 'Friend', type: 'Poison'},
+	{id: 'Hideko', name: 'Hideko', image: '114px-VSHideko.png', game: 'Paldea', role: 'Friend', type: 'Multitype'},
+	 {id: 'Cyrano', name: 'Cyramp', image: '190px-Scarlet_Violet_Cyrano.png', game: 'Paldea', role: 'Teacher', type: 'Multitype'},
+	{id: 'Lacey', name: 'Lacey', image: '150px-Scarlet_Violet_Lacey.png', game: 'Paldea', role: 'Elite Four', type: 'Fairy'},
+	{id: 'Crispin', name: 'Crispin', image: '270px-Scarlet_Violet_Crispin.png', game: 'Paldea', role: 'Elite Four', type: 'Fire'},
+	{id: 'Amarys', name: 'Amarys', image: '112px-Scarlet_Violet_Amarys.png', game: 'Paldea', role: 'Elite Four', type: 'Steel'},
+	 {id: 'Drayton', name: 'Drayton', image: '270px-Scarlet_Violet_Drayton.png', game: 'Paldea', role: 'Elite Four', type: 'Dragon'},
+	{id: 'Snacksworth', name: 'Snacksworth', image: '49px-Scarlet_Violet_Snacksworth.png', game: 'Paldea', role: 'Other', type: 'None'},
+	 {id: 'Synclaire', name: 'Synclaire', image: '40px-Scarlet_Violet_Synclaire.png', game: 'Paldea', role: 'Other', type: 'None'},
+	{id: 'Mitch', name: 'Mitch', image: '120px-Scarlet_Violet_Mitch.png', game: 'Paldea', role: 'Other', type: 'None'},
+	{id: 'Filbert', name: 'Filbert', image: '120px-Scarlet_Violet_Filbert.png', game: 'Paldea', role: 'Other', type: 'None'},
+	{id: 'Terry', name: 'Terry', image: '120px-Scarlet_Violet_Terry.png', game: 'Paldea', role: 'Other', type: 'None'},
+	 {id: 'Iso', name: 'Iso', image: '120px-Scarlet_Violet_Iso.png', game: 'Paldea', role: 'Other', type: 'None'},
+	{id: 'Allegro', name: 'Allegro', image: '120px-Scarlet_Violet_Allegro.png', game: 'Paldea', role: 'Other', type: 'None'}    
 ];
 
 var myPicker = new picker.Picker({
