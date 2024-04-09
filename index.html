@@ -288,6 +288,9 @@ button.disabled:hover {
 
 <p id="buttons"><button id="pick">Pick</button> <button id="pass">Pass</button> <button id="undo">Undo</button> <button id="redo">Redo</button> <button class="reset">Reset</button>
 </p>
+	            <div class="picker-info">
+                    <p>Characters remaining to be eliminated before next favorite is found: <span id="remaining"></span></p>
+                </div>	
 </div>
 
 <div id="secondary">
@@ -896,6 +899,17 @@ var pickerUI = new PickerUI(myPicker, {
             noDuplicates: '#no-Duplicates'
         }
     }
+	    onUpdate: function(updateType)
+	    {
+		     var total = this.picker.state.items.length;
+            var current = this.picker.state.arrays.current.length;
+            var favorites = this.picker.state.arrays.favorites.length;
+            var eliminated = this.picker.state.arrays.eliminated.length;
+            var evaluating = this.picker.state.arrays.evaluating.length;
+            var remaining = Math.max(0, total - favorites - eliminated - 1);
+
+            $("#remaining").text(remaining);
+	}
 });
 
 pickerUI.initialize();
