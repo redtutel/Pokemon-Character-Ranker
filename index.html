@@ -223,6 +223,8 @@ button.disabled:hover {
 </p>
 <p>
 <label><input type="checkbox" name="games" class="games" value="Paldea"> Scarlet and Violet </label>	
+<label><input type="checkbox" name="games" class="games" value="Lumiose"> Legends Z-A </label>	
+
 </p>
 
 <p> <b> Include roles: </b>
@@ -242,6 +244,7 @@ button.disabled:hover {
 <label><input type="checkbox" name="roles" class="roles" value="Trial Captain"> Trial Captain/Warden </label>
 <label><input type="checkbox" name="roles" class="roles" value="Team Star"> Team Star</label>
 <label><input type="checkbox" name="roles" class="roles" value="Teacher"> Teacher</label>
+<label><input type="checkbox" name="roles" class="roles" value="Z-A Organization"> Z-A Organization</label>
 <label><input type="checkbox" name="roles" class="roles" value="Other"> Other</label>
 
 
@@ -580,7 +583,7 @@ var items = [
   	{id: 'Colress', name: 'Colress', image: 'colress.png', game: 'Unova', role: 'Villain', type: 'Multitype'},
   	{id: 'Roxie', name: 'Roxie', image: 'roxie.png', game: 'Unova', role: 'Gym Leader', type: 'Poison'},
   	{id: 'Marlon', name: 'Marlon', image: 'marlon.png', game: 'Unova', role: 'Gym Leader', type: 'Water'},
-  	{id: 'Benga', name: 'Benga', image: '185px-Black_2_White_2_Benga.png', game: 'Unova', role: 'Frontier Brain', type: 'Multitype'},
+  	{id: 'Benga', name: 'Benga', image: 'benga.png', game: 'Unova', role: 'Frontier Brain', type: 'Multitype'},
   	{id: 'Curtis', name: 'Curtis', image: 'Curtis_Xtransceiver.png', game: 'Unova', role: 'Friend', type: 'None'},
   	{id: 'Yancy', name: 'Yancy', image: 'Yancy_Xtransceiver.png', game: 'Unova', role: 'Friend', type: 'None'},
   	{id: 'BW2 Mom', name: 'B2W2 Mom', image: 'Mom_Xtransceiver_2.png', game: 'Unova', role: 'Other', type: 'None'},
@@ -620,8 +623,8 @@ var items = [
   	{id: 'Morgan', name: 'Morgan', image: 'morgan.png', game: 'Kalos', role: 'Frontier Brain', type: 'Multitype'},
   	{id: 'Dana', name: 'Dana', image: 'dana.png', game: 'Kalos', role: 'Frontier Brain', type: 'Multitype'},
   	{id: 'Nita', name: 'Nita', image: 'nita.png', game: 'Kalos', role: 'Frontier Brain', type: 'Multitype'},
-  	{id: 'Sina', name: 'Sina', image: '100px-XY_Sina.png', game: 'Kalos', role: 'Other', type: 'None'},
-  	{id: 'Dexio', name: 'Dexio', image: '100px-XY_Dexio.png', game: 'Kalos', role: 'Other', type: 'None'},
+  	{id: 'Sina', name: 'Sina', image: 'sina.png', game: 'Kalos', role: 'Other', type: 'None'},
+  	{id: 'Dexio', name: 'Dexio', image: 'dexio.png', game: 'Kalos', role: 'Other', type: 'None'},
   	{id: 'Emma', name: 'Emma', image: 'emma.png', game: 'Kalos', role: 'Friend', type: 'Multitype'},
   	{id: 'Gurkinn', name: 'Gurkinn', image: '250px-Gurkinn_anime.png', game: 'Kalos', role: 'Other', type: 'None'},
 	{id: 'Grace', name: 'Grace', image: '250px-Grace_anime.png', game: 'Kalos', role: 'Other', type: 'Multitype'},
@@ -629,6 +632,10 @@ var items = [
 	{id: 'Inver', name: 'Inver', image: '71px-XY_Psychic.png', game: 'Kalos', role: 'Other', type: 'Multitype'},
 	{id: 'Mr. Bonding', name: 'Mr. Bonding', image: '120px-Mr_Bonding_XY_OD.png', game: 'Kalos', role: 'Other', type: 'None'},
 	{id: 'Phil the Photo Guy', name: 'Phil the Photo Guy', image: 'XY_Phil_the_Photo_Guy.png', game: 'Kalos', role: 'Other', type: 'None'},
+	{id: 'Blossom', name: 'Blossom', image: 'blossom.png', game: 'Kalos', role: 'Other', type: 'Fairy'},
+	{id: 'Kali', name: 'Kali', image: 'kali.png', game: 'Kalos', role: 'Other', type: 'Fairy'},
+	{id: 'Katherine', name: 'Katherine', image: 'katherine.png', game: 'Kalos', role: 'Other', type: 'Fairy'},
+	{id: 'Linnea', name: 'Linnea', image: 'linnea.png', game: 'Kalos', role: 'Other', type: 'Fairy'},
 
   	
   	//Alola
@@ -642,7 +649,7 @@ var items = [
   	{id: 'Professor Kukui', name: 'Professor Kukui', image: 'professorkukui.png', game: 'Alola', role: 'Professor', type: 'Multitype'},
   	{id: 'Champion Kukui', name: 'Champion Kukui', image: 'professorkukui.png', game: 'Alola', role: 'Champion', base: 'Professor Kukui', type: 'Multitype'},
   	{id: 'Masked Royal', name: 'Masked Royal', image: 'themaskedroyal.png', game: 'Alola', role: 'Other', base: 'Professor Kukui', type: 'Multitype'},
-  	{id: 'Ilima', name: 'Ilima', image: '39px-Sun_Moon_Ilima.png', game: 'Alola', role: 'Trial Captain', type: 'Normal'},
+  	{id: 'Ilima', name: 'Ilima', image: 'ilima.png', game: 'Alola', role: 'Trial Captain', type: 'Normal'},
   	{id: 'Lana', name: 'Lana', image: 'lana.png', game: 'Alola', role: 'Trial Captain', type: 'Water'},
   	{id: 'Kiawe', name: 'Kiawe', image: 'kiawe.png', game: 'Alola', role: 'Trial Captain', type: 'Fire'},
   	{id: 'Mallow', name: 'Mallow', image: 'mallow.png', game: 'Alola', role: 'Trial Captain', type: 'Grass'},
@@ -697,7 +704,7 @@ var items = [
   	{id: 'Hop', name: 'Hop', image: 'hop.png', game: 'Galar', role: 'Rival', type: 'Multitype'},
   	{id: 'Professor Magnolia', name: 'Professor Magnolia', image: '41px-Sword_Shield_Professor_Magnolia.png', game: 'Galar', role: 'Professor', type: 'None'},
   	{id: 'Sonia', name: 'Sonia', image: 'sonia.png', game: 'Galar', role: 'Professor', type: 'None'},
-  	{id: 'Milo', name: 'Milo', image: '62px-Sword_Shield_Milo.png', game: 'Galar', role: 'Gym Leader', type: 'Grass'},
+  	{id: 'Milo', name: 'Milo', image: 'milo.png', game: 'Galar', role: 'Gym Leader', type: 'Grass'},
   	{id: 'Nessa', name: 'Nessa', image: 'nessa.png', game: 'Galar', role: 'Gym Leader', type: 'Water'},
   	{id: 'Kabu', name: 'Kabu', image: '600px-Spr_Masters_Kabu_2.png', game: 'Galar', role: 'Gym Leader', type: 'Fire'},
   	{id: 'Bea', name: 'Bea', image: 'bea.png', game: 'Galar', role: 'Gym Leader', type: 'Fighting'},
@@ -754,8 +761,8 @@ var items = [
 	{id: 'Choy', name: 'Choy', image: '55px-Legends_Arceus_Choy.png', game: 'Hisui', role: 'Other', type: 'None'},
 	{id: 'Anthe', name: 'Anthe', image: '51px-Legends_Arceus_Anthe.png', game: 'Hisui', role: 'Other', type: 'None'},
 	{id: 'Adaman', name: 'Adaman', image: 'adaman.png', game: 'Hisui', role: 'Friend', type: 'Multitype'},
-	{id: 'Mai', name: 'Mai', image: '54px-Legends_Arceus_Mai.webp', game: 'Hisui', role: 'Trial Captain', type: 'Multitype'},
-	{id: 'Arezu', name: 'Arezu', image: '48px-Legends_Arceus_Arezu.webp', game: 'Hisui', role: 'Trial Captain', type: 'Multitype'},
+	{id: 'Mai', name: 'Mai', image: 'mai.png', game: 'Hisui', role: 'Trial Captain', type: 'Multitype'},
+	{id: 'Arezu', name: 'Arezu', image: 'arezu.png', game: 'Hisui', role: 'Trial Captain', type: 'Multitype'},
 	{id: 'Iscan', name: 'Iscan', image: '59px-Legends_Arceus_Iscan.webp', game: 'Hisui', role: 'Trial Captain', type: 'None'},
 	{id: 'Melli', name: 'Melli', image: '66px-Legends_Arceus_Melli.webp', game: 'Hisui', role: 'Trial Captain', type: 'Poison'},
 	{id: 'Sabi', name: 'Sabi', image: '97px-Legends_Arceus_Sabi.webp', game: 'Hisui', role: 'Trial Captain', type: 'Multitype'},
@@ -787,9 +794,9 @@ var items = [
 	{id: 'Paradise Protection Program Sada', name: 'Paradise Protection Program Sada', image: '130px-VSSada_2.png', game: 'Paldea', role: 'Villain', type: 'Multitype', base: 'Sada'},
 	{id: 'Paradise Protection Program Turo', name: 'Paradise Protection Program Turo', image: '121px-VSTuro_2.png', game: 'Paldea', role: 'Villain', type: 'Multitype', base: 'Turo'},
 	{id: 'Clavell', name: 'Clavell', image: 'clavell.png', game: 'Paldea', role: 'Teacher', type: 'Multitype'},
-	{id: 'Clive', name: 'Clive', image: 'appreciation-post-for-clive-the-coolest-kid-at-the-academy-v0-zfscde5sbn2a1.webp', game: 'Paldea', role: 'Friend', type: 'Multitype', base: 'Clavell'},
+	{id: 'Clive', name: 'Clive', image: 'clive.png', game: 'Paldea', role: 'Friend', type: 'Multitype', base: 'Clavell'},
 	{id: 'Katy', name: 'Katy', image: '50px-Scarlet_Violet_Katy.png', game: 'Paldea', role: 'Gym Leader', type: 'Bug'},
-	{id: 'Brassius', name: 'Brassius', image: '42px-Scarlet_Violet_Brassius.png', game: 'Paldea', role: 'Gym Leader', type: 'Grass'},
+	{id: 'Brassius', name: 'Brassius', image: 'brassius.png', game: 'Paldea', role: 'Gym Leader', type: 'Grass'},
 	{id: 'Iono', name: 'Iono', image: 'iono.png', game: 'Paldea', role: 'Gym Leader', type: 'Electric'},
 	{id: 'Kofu', name: 'Kofu', image: '61px-Scarlet_Violet_Kofu.png', game: 'Paldea', role: 'Gym Leader', type: 'Water'},
 	{id: 'Larry', name: 'Larry', image: '600px-Spr_Masters_Larry_2.png', game: 'Paldea', role: 'Gym Leader', type: 'Normal'},
@@ -799,17 +806,17 @@ var items = [
 	{id: 'Grusha', name: 'Grusha', image: 'grusha.png', game: 'Paldea', role: 'Gym Leader', type: 'Ice'},
 	{id: 'Rika', name: 'Rika', image: 'rika.png', game: 'Paldea', role: 'Elite Four', type: 'Ground'},
 	{id: 'Poppy', name: 'Poppy', image: '600px-Spr_Masters_Poppy_2.png', game: 'Paldea', role: 'Elite Four', type: 'Steel'},
-	{id: 'Hassel', name: 'Hassel', image: '48px-Scarlet_Violet_Hassel.png', game: 'Paldea', role: 'Teacher', type: 'Dragon'},
-	{id: 'Elite Four Hassel', name: 'Elite Four Hassel', image: '48px-Scarlet_Violet_Hassel.png', game: 'Paldea', role: 'Elite Four', type: 'Dragon', base: 'Hassel'},
+	{id: 'Hassel', name: 'Hassel', image: 'hassel.png', game: 'Paldea', role: 'Teacher', type: 'Dragon'},
+	{id: 'Elite Four Hassel', name: 'Elite Four Hassel', image: 'hassel.png', game: 'Paldea', role: 'Elite Four', type: 'Dragon', base: 'Hassel'},
 	{id: 'Geeta', name: 'Geeta', image: '49px-Scarlet_Violet_Geeta.png', game: 'Paldea', role: 'Champion', type: 'Multitype'},
 	{id: 'Giacomo', name: 'Giacomo', image: 'giacomo.png', game: 'Paldea', role: 'Team Star', type: 'Dark'},
-	{id: 'Mela', name: 'Mela', image: '68px-Scarlet_Violet_Mela.png', game: 'Paldea', role: 'Team Star', type: 'Fire'},
-	{id: 'Atticus', name: 'Atticus', image: '61px-Scarlet_Violet_Atticus.png', game: 'Paldea', role: 'Team Star', type: 'Poison'},
-	{id: 'Ortega', name: 'Ortega', image: '73px-Scarlet_Violet_Ortega.png', game: 'Paldea', role: 'Team Star', type: 'Fairy'},
-	{id: 'Eri', name: 'Eri', image: '77px-Scarlet_Violet_Eri.png', game: 'Paldea', role: 'Team Star', type: 'Fighting'},
+	{id: 'Mela', name: 'Mela', image: 'mela.png', game: 'Paldea', role: 'Team Star', type: 'Fire'},
+	{id: 'Atticus', name: 'Atticus', image: 'atticus.png', game: 'Paldea', role: 'Team Star', type: 'Poison'},
+	{id: 'Ortega', name: 'Ortega', image: 'ortega.png', game: 'Paldea', role: 'Team Star', type: 'Fairy'},
+	{id: 'Eri', name: 'Eri', image: 'eri.png', game: 'Paldea', role: 'Team Star', type: 'Fighting'},
 	{id: 'Jacq', name: 'Jacq', image: 'Spr_Masters_Jacq_2.png', game: 'Paldea', role: 'Teacher', type: 'Multitype'},
 	{id: 'Dendra', name: 'Dendra', image: '120px-VSDendra.png', game: 'Paldea', role: 'Teacher', type: 'Fighting'},
-	{id: 'Miriam', name: 'Miriam', image: '120px-VSMiriam.png', game: 'Paldea', role: 'Teacher', type: 'Multitype'},
+	{id: 'Miriam', name: 'Miriam', image: 'miriam.png', game: 'Paldea', role: 'Teacher', type: 'Multitype'},
 	{id: 'Raifort', name: 'Raifort', image: '120px-VSRaifort.png', game: 'Paldea', role: 'Teacher', type: 'Multitype'},
 	{id: 'Saguaro', name: 'Saguaro', image: '120px-VSSaguaro.png', game: 'Paldea', role: 'Teacher', type: 'Multitype'},
 	{id: 'Salvatore', name: 'Salvatore', image: '120px-VSSalvatore.png', game: 'Paldea', role: 'Teacher', type: 'Multitype'},
@@ -817,16 +824,16 @@ var items = [
 	
 	//DLC
 	//{id: '', name: '', image: '.png', game: 'Paldea', role: '', type: ''},
-	{id: 'Carmine', name: 'Carmine', image: '190px-Scarlet_Violet_Carmine.png', game: 'Paldea', role: 'Rival', type: 'Multitype'},
+	{id: 'Carmine', name: 'Carmine', image: 'carmine.png', game: 'Paldea', role: 'Rival', type: 'Multitype'},
 	{id: 'Kieran', name: 'Kirean', image: '150px-Scarlet_Violet_Kieran.png', game: 'Paldea', role: 'Rival', type: 'Multitype'},
-	{id: 'Champion Kieran', name: 'Champion Kieran', image: '755px-VSKieran_3.png', game: 'Paldea', role: 'Champion', type: 'Multitype', base: 'Kieran'},
+	{id: 'Champion Kieran', name: 'Champion Kieran', image: 'kirean.png', game: 'Paldea', role: 'Champion', type: 'Multitype', base: 'Kieran'},
 	{id: 'Briar', name: 'Briar', image: '150px-Scarlet_Violet_Briar.png', game: 'Paldea', role: 'Teacher', type: 'None'},
-	 {id: 'Perrin', name: 'Perrin', image: '161px-Scarlet_Violet_Perrin.png', game: 'Paldea', role: 'Friend', type: 'Multitype'},
+	 {id: 'Perrin', name: 'Perrin', image: 'perrin.png', game: 'Paldea', role: 'Friend', type: 'Multitype'},
 	{id: "Billy and O'Nare", name: "Billy and O'Nare", image: "250px-Glitterati_Billy_and_O'Nare.png", game: 'Paldea', role: 'Other', type: 'Multitype'},
 	 {id: 'Yukito', name: 'Yukito', image: '114px-VSYukito.png', game: 'Paldea', role: 'Friend', type: 'Poison'},
 	{id: 'Hideko', name: 'Hideko', image: '114px-VSHideko.png', game: 'Paldea', role: 'Friend', type: 'Multitype'},
 	 {id: 'Cyrano', name: 'Cyramp', image: '190px-Scarlet_Violet_Cyrano.png', game: 'Paldea', role: 'Teacher', type: 'Multitype'},
-	{id: 'Lacey', name: 'Lacey', image: '150px-Scarlet_Violet_Lacey.png', game: 'Paldea', role: 'Elite Four', type: 'Fairy'},
+	{id: 'Lacey', name: 'Lacey', image: 'lacey.png', game: 'Paldea', role: 'Elite Four', type: 'Fairy'},
 	{id: 'Crispin', name: 'Crispin', image: '270px-Scarlet_Violet_Crispin.png', game: 'Paldea', role: 'Elite Four', type: 'Fire'},
 	{id: 'Amarys', name: 'Amarys', image: '112px-Scarlet_Violet_Amarys.png', game: 'Paldea', role: 'Elite Four', type: 'Steel'},
 	 {id: 'Drayton', name: 'Drayton', image: '270px-Scarlet_Violet_Drayton.png', game: 'Paldea', role: 'Elite Four', type: 'Dragon'},
@@ -836,8 +843,47 @@ var items = [
 	{id: 'Filbert', name: 'Filbert', image: '120px-Scarlet_Violet_Filbert.png', game: 'Paldea', role: 'Other', type: 'None'},
 	{id: 'Terry', name: 'Terry', image: '120px-Scarlet_Violet_Terry.png', game: 'Paldea', role: 'Other', type: 'None'},
 	 {id: 'Iso', name: 'Iso', image: '120px-Scarlet_Violet_Iso.png', game: 'Paldea', role: 'Other', type: 'None'},
-	{id: 'Allegro', name: 'Allegro', image: '120px-Scarlet_Violet_Allegro.png', game: 'Paldea', role: 'Other', type: 'None'}    
-];
+	{id: 'Allegro', name: 'Allegro', image: '120px-Scarlet_Violet_Allegro.png', game: 'Paldea', role: 'Other', type: 'None'},
+
+	//Z-A 
+	//Z-A Organization
+	//{id: '', name: '', image: '.png', game: 'Lumiose', role: '', type: ''},
+	{id: 'Paxton', name: 'Paxton', image: '55px-ZA_Paxton.png', game: 'Lumiose', role: 'Protagonist', type: 'Multitype'},
+	{id: 'Harmony', name: 'Harmony', image: '62px-ZA_Harmony.png', game: 'Lumiose', role: 'Protagonist', type: 'Multitype'},
+	{id: 'Urbain', name: 'Urbain', image: '41px-ZA_Urbain.png', game: 'Lumiose', role: 'Rival', type: 'Multitype'},
+	{id: 'Taunie', name: 'Taunie', image: '51px-ZA_Taunie.png', game: 'Lumiose', role: 'Rival', type: 'Multitype'},
+	{id: 'Lida', name: 'Lida', image: '65px-ZA_Lida.png', game: 'Lumiose', role: 'Friend', type: 'Water'},
+	{id: 'Naveen', name: 'Naveen', image: '52px-ZA_Naveen.png', game: 'Lumiose', role: 'Friend', type: 'Dark'},
+	{id: 'Jett', name: 'Jett', image: '30px-ZA_Jett.png', game: 'Lumiose', role: 'Other', type: 'None'},
+	{id: 'Vinnie', name: 'Vinnie', image: '43px-ZA_Vinnie.png', game: 'Lumiose', role: 'Other', type: 'Multitype'},
+	{id: 'Canari', name: 'Canari', image: '42px-ZA_Canari.png', game: 'Lumiose', role: 'Z-A Organization', type: 'Electric'},
+	{id: 'Tarragon', name: 'Tarragon', image: 'Teragan.jpg', game: 'Lumiose', role: 'Z-A Organization', type: 'Ground'},
+	{id: 'Ivor', name: 'Ivor', image: 'Ivor.jpg', game: 'Lumiose', role: 'Z-A Organization', type: 'Fighting'},
+	{id: 'Gwynn', name: 'Gwynn', image: 'Gwyn.jpg', game: 'Lumiose', role: 'Z-A Organization', type: 'Ghost'},
+	{id: 'Corbeau', name: 'Corbeau', image: '54px-ZA_Corbeau.png', game: 'Lumiose', role: 'Z-A Organization', type: 'Poison'},
+	{id: 'Philippe', name: 'Philippe', image: 'Philippe.jpg', game: 'Lumiose', role: 'Z-A Organization', type: 'Steel'},
+	{id: 'Jacinthe', name: 'Jacinthe', image: 'Jasenthe.jpg', game: 'Lumiose', role: 'Z-A Organization', type: 'Fairy'},
+	{id: 'Lebanne', name: 'Lebanne', image: 'Lebanne.jpg', game: 'Lumiose', role: 'Z-A Organization', type: 'Dragon'},
+	{id: 'Grisham', name: 'Grisham', image: 'Grism.jpg', game: 'Lumiose', role: 'Z-A Organization', type: 'Multitype'},
+	{id: 'Griselle', name: 'Griselle', image: 'Giselle.jpg', game: 'Lumiose', role: 'Z-A Organization', type: 'Fire'},
+	{id: 'Andi', name: 'Andi', image: '120px-Infinite_Z-A_Royale_Profile_Andi.png', game: 'Lumiose', role: 'Other', type: 'Multitype'},
+	{id: 'Josée', name: 'Josée', image: '120px-Infinite_Z-A_Royale_Profile_Josée.png', game: 'Lumiose', role: 'Other', type: 'Fighting'},
+	{id: 'Mani', name: 'Mani', image: '120px-Infinite_Z-A_Royale_Profile_Mani.png', game: 'Lumiose', role: 'Other', type: 'Electric'},
+	{id: 'Asami', name: 'Asami', image: '120px-Infinite_Z-A_Royale_Profile_Asami.png', game: 'Lumiose', role: 'Other', type: 'Fairy'},
+	{id: 'Zach', name: 'Zach', image: '120px-Z-A_Royale_Profile_Zach.png', game: 'Lumiose', role: 'Other', type: 'Multitype'},
+	{id: 'Yvon', name: 'Yvon', image: '120px-Z-A_Royale_Profile_Yvon.png', game: 'Lumiose', role: 'Other', type: 'Multitype'},
+	{id: 'Xavi', name: 'Xavi', image: '120px-Z-A_Royale_Profile_Xavi.png', game: 'Lumiose', role: 'Other', type: 'Multitype'},
+	{id: 'Rintaro', name: 'Rintaro', image: '120px-Z-A_Royale_Profile_Rintaro.png', game: 'Lumiose', role: 'Other', type: 'Multitype'},
+	{id: 'Ansha', name: 'Ansha', image: '42px-ZA_Ansha.png', game: 'Lumiose', role: 'Friend', type: 'None'},
+
+	
+	//X and Y Returning characters
+	{id: 'AZ', name: 'AZ', image: '350px-ZA_AZ.png', game: 'Lumiose', role: 'Friend', type: 'None', base: 'AZ'},
+	{id: 'Emma', name: 'Emma', image: '120px-ZA_Emma.png', game: 'Lumiose', role: 'Friend', type: 'Multitype', base: 'Emma'},
+	{id: 'Mable', name: 'Mable', image: '200px-ZA_Mable.png', game: 'Lumiose', role: 'Professor', type: 'None'},
+	{id: 'Korrina', name: 'Korrina', image: '180px-ZA_Korrina.png', game: 'Lumiose', role: 'Friend', type: 'Fighting', base: 'Korrina'},
+	{id: 'L', name: 'L', image: 'L.jpg', game: 'Lumiose', role: 'Friend', type: 'Multitype'}
+	];
 
 var myPicker = new picker.Picker({
     items: items,
